@@ -364,3 +364,108 @@ color:var(--orange-vif);
 .card-contact a:hover{
   color:var(--bleu-lavande);
 }
+
+
+/* styles page Réalisations*/
+
+/* Position de l'image gallery*/
+.container-gallery{
+  max-width:800px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  object-fit: cover;
+}
+
+
+.row img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-gallery * {
+  box-sizing: border-box;
+}
+
+/* Cacher  images par default */
+.slide {
+  display: none;
+  aspect-ratio: 16/9;
+  
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Ajouter un pointeur lors du survol des images miniatures */
+.cursor {
+  cursor: pointer;
+}
+
+/* Boutons suivant et précédent */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Positionnez le « bouton suivant » à droite*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Au survol, ajoutez une couleur d'arrière-plan noire avec un peu de transparence */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Nombre text (1/3 etc) */
+.nombretext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Conteneur pour la légende de l'image */
+.legende-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ .row {
+  display:grid;
+  grid-template-columns: repeat(6 , 1fr);
+ }
+
+/* Six colonnes côte à côte */
+
+
+/* Ajouter un effet de transparence pour les images miniatures */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
