@@ -1,16 +1,14 @@
 /* main.css */
 
 /* Importation des styles du header */
-@import url('/CSS/header.css');
+@import url('CSS/header.css');
 
 /* Importation des styles responsives */
-@import url('/CSS/responsive.css');
+@import url('CSS/responsive.css');
 
 /* Importation des styles footer */
-@import url('/CSS/footer.css');
+@import url('CSS/footer.css');
 
-/*Importation des styles normalize */
-@import url('/CSS/normalize.css');
 
 /* styles globaux*/
 
@@ -40,7 +38,7 @@ body {
 /* styles Accueil*/
 
 .accueil {
-  background-image: url("/ASSET/cosmos\ presnetation\ 1.jpg");
+  background-image: url("ASSET/cosmospresnetation1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 86px 0 0 0;

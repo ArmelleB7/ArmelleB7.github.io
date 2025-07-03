@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', chargerMenu);
 async function chargerMenu() {
   try {
     const header = document.getElementById('header');
-    const reponse = await fetch('html/header.html');
+    const reponse = await fetch('HTML/header.html');
 
     if (!reponse.ok) {
       throw new Error('Erreur lors du chargement du menu');
@@ -34,7 +34,7 @@ async function chargerMenu() {
 // Sélectionne l'élément où insérer le footer
 const footer = document.getElementById('footer');
 
-fetch('/html/footer.html')
+fetch('HTML/footer.html')
   .then(response => {
     if (!response.ok) {
       throw new Error('Erreur lors du chargement du menu');
