@@ -17,7 +17,7 @@
     top: 0;
 }
 
-#nav-header{
+#nav-header{  
 align-items: center;
 }
 
@@ -45,7 +45,7 @@ align-items: center;
     display: none;
     list-style: none;
     justify-content: space-around;
-    align-items: first baseline;
+    align-items:first baseline;
     margin: 40px 0 0 0 ;
     gap: 30px;
     flex-wrap: wrap;

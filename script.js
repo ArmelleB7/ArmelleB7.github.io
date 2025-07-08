@@ -19,6 +19,35 @@ async function chargerMenu() {
 }
 }
 
+
+// Menu burger
+
+function initialiserNavigation() {
+
+const menu = document.getElementById("menu");
+const menutoggle = document.getElementById("menu-toggle");
+const containermenu2 = document.getElementById("container-menu2");
+menutoggle.addEventListener("click", ()=> {
+  menu.classList.toggle("ouvert");
+  menutoggle.classList.toggle("ouvert");
+  containermenu2.classList.toggle("mobile");
+});
+}
+
+
+// Marquer le lien actif
+function marquerLienActif() {
+  const currentURL = window.location.pathname;
+  const links = document.querySelectorAll('nav a');
+  
+  links.forEach(link => {
+    if (link.getAttribute('href') === currentURL) {
+      link.classList.add('active');
+    }
+  });
+}
+
+
 // Gallery page Réalisation
 
 let slideIndex = 1;
@@ -45,7 +74,7 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace("active", "");
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
@@ -71,16 +100,7 @@ fetch('/HTML/footer.html')
     console.error('Erreur :', error);
   });
 
-// Menu burger
 
-let menu = document.getElementById("menu");
-let menutoggle = document.getElementById("menu-toggle");
-let containermenu2 = document.getElementById("container-menu2");
-menutoggle.addEventListener("click", function () {
-  menu.classList.toggle("ouvert");
-  menutoggle.classList.toggle("ouvert");
-  containermenu2.classList.toggle("mobile");
-});
 
 
 
